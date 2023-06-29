@@ -22,6 +22,6 @@ for idx,page in enumerate(reader.pages):
     if idx+1 in blocks:
         current_title = blocks[idx+1]
     if current_title:
-        writer.add_outline_item(f"Page {idx+1}: {current_title}", idx, parent=None)  # add bookmark
+        writer.add_outline_item(f"Page {idx+1} - {current_title}", idx, parent=None)  # add bookmark
 with open(f"{file_name} (Edit).pdf", "wb") as fp:  # creating result pdf JCT
     writer.write(fp)  # writing to result pdf JCT
