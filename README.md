@@ -1,5 +1,10 @@
 # PdfBookmarker
 
+### Prerequisites
+
+- Download Python3
+- run `pip3 install pypdf` to install necessary libraries (or `pip install pypdf` depending on python3 install)
+
 ### How to use
 
 Add the files you want to edit to the documentation folder.
