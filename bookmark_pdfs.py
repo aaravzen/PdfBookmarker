@@ -11,7 +11,6 @@ blocks = {
     44: "Anchor Designer",
     50: "Overview Diagrams"
 }
-
 # END OF USER INPUT
 
 writer = PdfWriter()  # open output
@@ -24,5 +23,5 @@ for idx,page in enumerate(reader.pages):
         current_title = blocks[idx+1]
     if current_title:
         writer.add_outline_item(current_title, idx, parent=None)  # add bookmark
-with open("result.pdf", "wb") as fp:  # creating result pdf JCT
+with open(f"{file_name} (Edit).pdf", "wb") as fp:  # creating result pdf JCT
     writer.write(fp)  # writing to result pdf JCT
